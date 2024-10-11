@@ -28,6 +28,7 @@ class UsuarioControllerTest {
 
     }
 
+    //método utilitário para transformar um objeto java em formato json
     private static String asJsonString(Object object) {
         try {
             return new ObjectMapper().writeValueAsString(object);
