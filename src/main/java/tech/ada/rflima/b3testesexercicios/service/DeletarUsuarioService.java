@@ -16,7 +16,8 @@ public class DeletarUsuarioService {
 
     public void deletarUsuario(Long id) {
         Usuario usuarioBancoDeDados = usuarioRepository.findById(id)
-                .orElseThrow(() -> new UsuarioNaoEncontradoException(String.format("Usuário não encontrado com o ID %s", id)));
+                .orElseThrow(() ->
+                        new UsuarioNaoEncontradoException(String.format("Usuário não encontrado com o ID %s", id)));
         usuarioRepository.delete(usuarioBancoDeDados);
     }
 }
