@@ -9,7 +9,6 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tech.ada.rflima.b3testesexercicios.entity.Usuario;
 import tech.ada.rflima.b3testesexercicios.repository.UsuarioRepository;
-import tech.ada.rflima.b3testesexercicios.repository.UsuarioRepositoryTest;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
