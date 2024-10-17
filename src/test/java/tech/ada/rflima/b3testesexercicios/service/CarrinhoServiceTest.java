@@ -26,6 +26,8 @@ public class CarrinhoServiceTest {
         Produto produto = new Produto("Livro", 50d);
         service.adicionarProdutoAoCarrinho(produto);
 
+
+
         service.removerProdutoCarrinho(produto);
 
         Assertions.assertEquals(0, service.listarProdutosCarrinho().size());
